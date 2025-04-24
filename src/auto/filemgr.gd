@@ -25,7 +25,7 @@ func f_read(path: String):
 	var filepath = path
 	var data
 	var type = path.get_extension()
-	print("load path: ", filepath)
+	#print("load path: ", filepath)
 	file = FileAccess.open(filepath, FileAccess.READ)
 	if type == "json":
 		var content = file.get_as_text()

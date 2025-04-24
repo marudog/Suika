@@ -64,7 +64,7 @@ func _ready():
 	var info = File.f_read(MOD_INFO_PATH).replace("\r", "").split("\n")
 	mod_info.name = info[0]
 	mod_info.version = info[1]
-	print(info)
+	#print(info)
 	get_window().title = engine_info.name + " " + engine_info.version + " - " + mod_info.name
 	merge_status.resize(MAX_LVL)
 	merge_status.fill(0)
@@ -151,7 +151,7 @@ func score_add(v):
 		var score_lbl = get_node("/root/main/ui/ranking/Panel/MarginContainer2/Panel/MarginContainer/VBoxContainer/" + str(count) + "/score")
 		score_lbl.text = str(roundi(i[0]))
 		count += 1
-	print(score_ranking)
+	#print(score_ranking)
 
 func ranking_sort(a, b):
 	if b[0] > a[0]:
@@ -167,7 +167,7 @@ func load_():
 		dict = save_()
 	for i in dict[mod_info.name].keys():
 		Game[i] = dict[mod_info.name][i]
-	print(dict)
+	#print(dict)
 
 func save_(init = false):
 	var dict: Dictionary
@@ -184,7 +184,7 @@ func save_(init = false):
 		read = File.f_read(SUIKA_DATA)
 	read[mod_info.name] = dict
 	File.f_save(SUIKA_DATA, read)
-	print("saved: ", read)
+	#print("saved: ", read)
 	return read
 
 func reset():
@@ -195,7 +195,7 @@ func reset():
 
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
-		print("closed")
+		#print("closed")
 		save_()
 
 const ASSET_PATH := "res://asset/" # プロジェクトの中に埋め込まれたデータres://
@@ -212,10 +212,10 @@ func load_asset(category, v):
 	var path_placeholder = ASSET_PATH + category + "/placeholder/" + v + ext
 	var path_placeholder_placeholder = ASSET_PATH + category + "/placeholder/placeholder" + ext
 	if FileAccess.file_exists(path):
-		print("load: ", path)
+		#print("load: ", path)
 		return load(path)
 	elif FileAccess.file_exists(path_skin_placeholder):
-		print("load: ", path_skin_placeholder)
+		#print("load: ", path_skin_placeholder)
 		load_fail_emit(category)
 		return load(path_skin_placeholder)
 	#elif FileAccess.file_exists(path_placeholder):
@@ -227,7 +227,7 @@ func load_asset(category, v):
 	#	load_fail_emit(category)
 	#	return load(path_placeholder_placeholder)
 		
-	print("loadfail: ", v)
+	#("loadfail: ", v)
 	load_fail_emit(category)
 	return load(path_placeholder)
 
