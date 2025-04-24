@@ -36,7 +36,7 @@ theme_override_colors/font_outline_color = Color(0.631373, 0.454902, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("1_1ani2")
 theme_override_font_sizes/font_size = 100
-text = "치돌 게임"
+text = "Chidori Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -71,7 +71,7 @@ grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_1ani2")
 theme_override_font_sizes/font_size = 50
-text = "Press Space Key"
+text = "Press Space Or Click"
 horizontal_alignment = 1
 vertical_alignment = 1
 
