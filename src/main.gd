@@ -77,7 +77,7 @@ func evo_set():
 func info_set():
 	var game_ind = $ui/info/cur
 	var version_text = $ui/info/ver
-	game_ind.text = str(Game.game_index) + "판 째"
+	game_ind.text = str(Game.game_index) + "round"
 	# version_text.text = Game.engine_info.name + " v" + Game.engine_info.version + "\n" + Game.mod_info.name + " v" + Game.mod_info.version
 	version_text.text = Game.engine_info.name
 
