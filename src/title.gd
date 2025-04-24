@@ -11,8 +11,8 @@ var red = Color(1, 0, 0)
 var focus := false
 
 func _ready():
-	$mod_title.text = Game.mod_info.name
-	$mod_ver.text = Game.mod_info.version
+	#$mod_title.text = Game.mod_info.name
+	#$mod_ver.text = Game.mod_info.version
 	$TextureRect.texture = Game.load_asset("img", "lv11")
 
 func _process(delta):

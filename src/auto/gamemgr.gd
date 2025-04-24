@@ -38,7 +38,7 @@ var merge_status : Array
 var game_index := 0:
 	set(v):
 		game_index = v
-		$/root/main/ui/info/cur.text = str(v) + "round"
+		$/root/main/ui/info/cur.text = str(v) + " round"
 # 最高レベル
 const MAX_LVL := 11
 # ランキングサイズ
