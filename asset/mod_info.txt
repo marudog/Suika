@@ -1,2 +1,2 @@
-치돌 게임
+Chidori Game
 https://github.com/Yuumayay/SuikaEngine

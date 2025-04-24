@@ -36,7 +36,7 @@ theme_override_colors/font_outline_color = Color(0.192157, 0, 0.568627, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_2cu5p")
 theme_override_font_sizes/font_size = 100
-text = "게임오버"
+text = "Game Over"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -85,8 +85,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_2cu5p")
-theme_override_font_sizes/font_size = 50
-text = "Press Space Key"
+theme_override_font_sizes/font_size = 45
+text = "Press Space Key or Click"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -98,7 +98,7 @@ offset_right = 1139.0
 offset_bottom = 631.0
 theme_override_fonts/font = ExtResource("2_2cu5p")
 theme_override_font_sizes/font_size = 30
-text = "마지막 화면 보기"
+text = "Last Scene"
 
 [node name="screen" type="Control" parent="."]
 visible = false
