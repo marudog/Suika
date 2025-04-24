@@ -56,8 +56,8 @@ func _on_hitbox_body_entered(body):
 	if "lvl" in body and lvl == body.lvl and body != self and state == DROP and body.state == DROP and lvl != Game.MAX_LVL:
 		obj_placed.emit()
 		Game.merge(self, position, lvl)
-	else :
-		hit()
+		
+	hit()
 
 func failed():
 	set_deferred("freeze", true)
