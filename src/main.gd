@@ -13,6 +13,7 @@ var fail_f := false
 func _ready():
 	#Game.img_load_fail.connect(func(): $error/error_img.show()) # TODO あとで時間で消えるように
 	#Game.sound_load_fail.connect(func(): $error/error_sound.show())
+	var my_font = preload("res://asset/font/RocknRollOne-Regular.ttf")
 	$merge.stream = Game.load_asset("sound", "merge")
 	$drop.stream = Game.load_asset("sound", "drop")
 	$bgm.stream = Game.load_asset("sound", "ukiukilalala")
